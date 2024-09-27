@@ -70,13 +70,13 @@ if (req.session.user == null){
                         background-color: white; /* Green */
                         border: none;
                         color: white;
-                        width: 20vh;
-                        height: 20vh;
+                        width: 15vh;
+                        height: 15vh;
                         margin: auto;
                         text-align: center;
                         text-decoration: none;
                         display: inline-block;
-                        font-size: 10vh;
+                        font-size: 8vh;
                         border-radius: 50%;
                         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
                         }
@@ -201,6 +201,7 @@ Boa sorte.
      data-theme="outline"
      data-text="signin_with"
      data-size="large"
+     data-width=400
      data-logo_alignment="left">
 </div>
 </div>
