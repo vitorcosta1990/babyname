@@ -19,7 +19,6 @@ const pool = new Pool({
     database: 'babynames',  // The database we created earlier
     password: process.env.DATABASE_PASS,  // Your PostgreSQL password
     port: 5432,  // Default port for PostgreSQL
-    ssl: true
 });
 
 app.get('/', function(req, res){
