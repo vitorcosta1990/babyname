@@ -191,7 +191,7 @@ Boa sorte.
      data-client_id="571555599789-bosikch94v88fk28rh21evqjsuutivfu.apps.googleusercontent.com"
      data-context="use"
      data-ux_mode="popup"
-     data-login_uri="http://localhost:3000/login_activate"
+     data-login_uri="/login_activate"
      data-auto_prompt="false">
 </div>
 <div>
