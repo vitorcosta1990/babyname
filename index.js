@@ -211,8 +211,8 @@ Boa sorte.
 // Get random name endpoint
 app.get('/get-random-name', async (req, res) => {
     try {
-        const result = await pool.query('SELECT n.nome, n.id FROM nomes n LEFT JOIN votos v ON v.nome_id = n.id and v.usuario = $1 WHERE v.nome_id IS NULL ORDER BY RANDOM() LIMIT 1',['teste']);
-        if (result && res.length > 0){
+        const result = await pool.query('SELECT n.nome, n.id FROM nomes n LEFT JOIN votos v ON v.nome_id = n.id and v.usuario = $1 WHERE v.nome_id IS NULL ORDER BY RANDOM() LIMIT 1',[req.session.email]);
+        if (result && result.rows.length > 0){
             const randomName = result.rows[0];
             res.json({ id: randomName.id, name: randomName.nome });
         }else{
