@@ -107,7 +107,7 @@ if (req.session.user == null){
             <script src="https://kit.fontawesome.com/6146356ccc.js" crossorigin="anonymous"></script>
         </head>
         <body>
-            <p style="text-align: right;font-family: Arial, Helvetica, sans-serif;">${nome}, <a href="/logout">sair.</a></p>
+            <p style="text-align: right;font-family: Arial, Helvetica, sans-serif;font-size: 3vh;">${nome}, <a href="/logout">sair.</a></p>
             <div class="display">
                 <h1 id="nameDisplay"></h1>
             </div>
