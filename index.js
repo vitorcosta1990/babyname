@@ -229,7 +229,7 @@ app.get('/get-random-name', async (req, res) => {
 app.post('/submit-response', async (req, res) => {
     const { id, answer } = req.body;
     try {
-        await pool.query('INSERT INTO votos (usuario, nome_id, voto) VALUES ($1, $2, $3)', [req.session.email,id, answer]);
+        await pool.query('INSERT INTO votos (usuario, nome_id, voto, nome) VALUES ($1, $2, $3, $4)', [req.session.email,id, answer,req.session.user ]);
         res.json({ success: true });
     } catch (err) {
         console.error(err);
